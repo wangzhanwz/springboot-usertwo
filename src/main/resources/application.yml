@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  datasource:
+        driverClassName:  com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/1908_xy?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: 123456
+  jpa:
+    database: mysql
+ #配置mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.qf.domain
